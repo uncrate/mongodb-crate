@@ -37,8 +37,8 @@ when "centos", "redhat"
   end
 
   service "mongod" do
-    service_name "mongodb"
-    restart_command "service mongodb restart"
+    service_name "mongod"
+    restart_command "service mongod restart"
     supports [:restart, :status]
     action [:enable, :start]
   end
