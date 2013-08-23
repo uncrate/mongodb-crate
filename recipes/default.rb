@@ -36,7 +36,7 @@ when "centos", "redhat"
     package_name "mongo-10gen-server"
   end
 
-  service "mongodb" do
+  service "mongod" do
     service_name "mongodb"
     restart_command "service mongodb restart"
     supports [:restart, :status]
