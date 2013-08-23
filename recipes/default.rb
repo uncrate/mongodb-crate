@@ -22,7 +22,8 @@ when "ubuntu"
   end
 when "centos", "redhat"
   yum_repository "mongodb" do
-    repo_name "10gen Repository"
+    repo_name "10gen"
+    description "10gen Repository"
     url "http://downloads-distro.mongodb.org/repo/redhat/os/x86_64"
     action :add
   end
