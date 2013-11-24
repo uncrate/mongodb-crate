@@ -42,4 +42,8 @@ when "centos", "redhat"
     supports [:restart, :status]
     action [:enable, :start]
   end
+when "mac_os_x"
+  package 'mongodb' do
+    action :install
+  end
 end
